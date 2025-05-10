@@ -1,0 +1,22 @@
+<h1>Info om stjerner</h1>
+<p></p>
+
+<button>Skriv ut</button>
+
+<script>
+    let knappEl=document.querySelector("button")
+    let avsnittEl=document.querySelector("p")
+    
+
+    const stjerner = async () =>
+{   
+    const url="stjernedata.json"
+    const hent = await fetch(url)
+    const json = await hent.json()
+    let stjerne=hent
+    console.log(stjerne)
+
+
+
+}
+</script>
