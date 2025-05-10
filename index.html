@@ -14,7 +14,11 @@
     const hent = await fetch(url)
     const json = await hent.json()
     let stjerne=hent
-    console.log(stjerne)
+    
+
+    for (let i=0;i<stjerne.data.length;i++){
+        console.log(stjerne[i])
+    }
 
 
 
